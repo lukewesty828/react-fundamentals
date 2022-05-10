@@ -19,13 +19,19 @@
 <!--   📜 https://developer.mozilla.org/en-US/docs/Web/API/ParentNode/append -->
 
 <html>
-<body id="root">
+<body>
+<div id="root"></div>
 <script type="module">
     const rootDiv = document.getElementById('root')
+    // accessing the dom node that the browser has created
     const greetDiv = document.createElement('div')
-    greetDiv.className = 'container'
+    // creating the div in memory
     greetDiv.textContent = 'Hello World! Lets go babyyy!'
+    // providing text to be displayed in dom
+    greetDiv.className = 'container'
+    // giving a class name of container to element... not sure why yet
     rootDiv.append(greetDiv)
+    // appending greetDiv element to rootDiv
 </script>
 </body>
 </html>
