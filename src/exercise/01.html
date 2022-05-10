@@ -21,9 +21,11 @@
 <html>
 <body id="root">
 <script type="module">
-    document.createElement('div')
-    div.textContent = 'Hello World! Lets go babyyy!'
-    div.append(root)
+    const rootDiv = document.getElementById('root')
+    const greetDiv = document.createElement('div')
+    greetDiv.className = 'container'
+    greetDiv.textContent = 'Hello World! Lets go babyyy!'
+    rootDiv.append(greetDiv)
 </script>
 </body>
 </html>
