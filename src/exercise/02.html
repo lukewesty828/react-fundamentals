@@ -20,10 +20,15 @@
 
     const helloElement = React.createElement('span', {}, 'Hello')
     const worldElement = React.creatElement('span', {}, 'World')
-    const element = React.createElement('div',{
-      className: 'container',
-      children: [helloElement,' ', worldElement],
-    })
+    const element = React.createElement(
+      'div',
+      {
+        className: 'container',
+      },
+      helloElement,
+      ' ', 
+      worldElement,
+    )
 
     console.log(element)
 
