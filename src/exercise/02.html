@@ -18,12 +18,21 @@
 
     const rootElement = document.getElementById('root')
 
-    
+    const helloElement = React.createElement('span', {}, 'Hello')
+    const worldElement = React.creatElement('span', {}, 'World')
     const element = React.createElement('div',{
-      children: 'Hello World',
       className: 'container',
+      children: [helloElement,' ', worldElement],
     })
+
+    console.log(element)
+
     ReactDOM.render(element, rootElement)
+
+    // <div class="container">
+    //   <span>Hello</span>
+    //   <span>World</span>
+    // </div>
  
     // element.textContent = 'Hello World' // 💰 in React, you set this with the "children" prop
     // element.className = 'container' // 💰 in React, this is also called the "className" prop
