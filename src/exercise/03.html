@@ -26,7 +26,7 @@
     const children = 'Hello World'
     const className = 'container'
     const props = {children, className}
-    const element = <div>{...props}</div>
+    const element = <div {...props}/>
 
     // const element = React.createElement('div', {
     //   className: 'container',
