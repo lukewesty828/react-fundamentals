@@ -18,6 +18,6 @@ const Message = props => <div className="message">{props.children}</div>
       </div>
     );
     // 💯 This is only the first step to making actual React components. The rest is in the extra credit!
-    ReactDOM.createRoot(document.getElement(Message, {children: 'Hello World'})).render(element)
+    ReactDOM.createRoot(document.getElementById('root')).render(element)
   </script>
 </body>
